@@ -23,22 +23,6 @@ enable_testing()
 
 # Sources
 set(Sources
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Applications/Src/output.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Applications/Src/tick_timer.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Applications/Src/menu.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Applications/Src/input.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Applications/Src/standby_state.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Applications/Src/heating_state.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Applications/Src/stateMachine.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Applications/Src/global.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Applications/Src/ui.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Applications/Src/adcRawConversions.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Applications/Src/selftest_state.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Component/SSD1309/ssd1306_fonts.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Component/SSD1309/ssd1306_tests.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Component/SSD1309/ssd1306.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Component/AMT49406/amt49406.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Component/ADS1119/ads1119.c
   ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Core/Src/syscalls.c
   ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Core/Src/stm32f4xx_it.c
   ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Core/Src/stm32f4xx_hal_msp.c
@@ -46,24 +30,16 @@ set(Sources
   ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Core/Src/system_stm32f4xx.c
   ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Core/Startup/startup_stm32f407vgtx.s
   ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c
   ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c
   ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c
   ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c
   ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
   ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
   ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c
   ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
   ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
   ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
   ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c
   ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
   ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
   ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
@@ -78,11 +54,6 @@ set(Headers
     ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy
     ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/CMSIS/Device/ST/STM32F4xx/Include
     ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Drivers/CMSIS/Include
-    ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Component/ADS1119
-    ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Component/SSD1309
-    ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Component/AMT49406
-    ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Applications/Inc
-    ${CMAKE_CURRENT_SOURCE_DIR}/../Project/Applications/Src
 )
 
 include_directories(${Headers})
